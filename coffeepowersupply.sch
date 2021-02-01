@@ -154,7 +154,7 @@ Zero Crossing detection\n
 Wire Wire Line
 	6250 6600 6550 6600
 Text Label 6550 6600 0    50   ~ 0
-MCU
+Null_MCU
 $Comp
 L Device:R R7
 U 1 1 6015278D
@@ -839,4 +839,140 @@ Wire Notes Line
 	8700 3000 8700 4800
 Wire Notes Line
 	8700 4800 3750 4800
+$Comp
+L MCU_ST_STM32F0:STM32F030C8Tx U?
+U 1 1 60188C82
+P 1350 4300
+F 0 "U?" H 1350 2611 50  0000 C CNN
+F 1 "STM32F030C8Tx" H 1350 2520 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 850 2800 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 1350 4300 50  0001 C CNN
+	1    1350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5500 2500 5500
+Wire Wire Line
+	1950 5600 2500 5600
+Text Label 2500 5500 0    50   ~ 0
+SWDIO
+Text Label 2500 5600 0    50   ~ 0
+SWCLK
+$Comp
+L Device:C C?
+U 1 1 601959AB
+P 850 6800
+F 0 "C?" H 965 6846 50  0000 L CNN
+F 1 "10n" H 965 6755 50  0000 L CNN
+F 2 "" H 888 6650 50  0001 C CNN
+F 3 "~" H 850 6800 50  0001 C CNN
+	1    850  6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 601A92CE
+P 850 7450
+F 0 "C?" H 965 7496 50  0000 L CNN
+F 1 "200u" H 965 7405 50  0000 L CNN
+F 2 "" H 888 7300 50  0001 C CNN
+F 3 "~" H 850 7450 50  0001 C CNN
+	1    850  7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2700 1550 2550
+Text Label 1550 2550 0    50   ~ 0
+VDDA
+Wire Wire Line
+	1450 5900 1450 6300
+Text Label 1450 6300 0    50   ~ 0
+VSSA
+Text Label 600  6550 0    50   ~ 0
++V
+Text Label 1050 6550 0    50   ~ 0
+VDDA
+Wire Wire Line
+	600  6550 850  6550
+Wire Wire Line
+	850  6550 850  6650
+Wire Wire Line
+	850  6550 1050 6550
+Connection ~ 850  6550
+Wire Wire Line
+	850  6950 850  7050
+Text Label 850  7050 0    50   ~ 0
+VSSA
+Wire Wire Line
+	850  7300 850  7250
+Wire Wire Line
+	850  7250 1150 7250
+Wire Wire Line
+	850  7250 650  7250
+Connection ~ 850  7250
+Text Label 650  7250 0    50   ~ 0
++V
+Text Label 1150 7250 0    50   ~ 0
+VDD
+Wire Wire Line
+	1250 2700 1250 2550
+Text Label 1250 2550 0    50   ~ 0
+VDD
+Wire Wire Line
+	850  7600 850  7750
+Wire Wire Line
+	850  7750 1050 7750
+Wire Wire Line
+	1250 5900 1250 6000
+Wire Wire Line
+	1250 6000 1350 6000
+Wire Wire Line
+	1350 6000 1350 5900
+Text Label 1250 6000 0    50   ~ 0
+VSS
+Text Label 1050 7750 0    50   ~ 0
+VSS
+Wire Wire Line
+	1450 2700 1450 2600
+Wire Wire Line
+	1450 2600 1350 2600
+Wire Wire Line
+	1350 2600 1350 2700
+Wire Wire Line
+	1250 2550 1350 2550
+Wire Wire Line
+	1350 2550 1350 2600
+Connection ~ 1350 2600
+Wire Notes Line
+	550  6450 550  7800
+Wire Notes Line
+	1850 7800 1850 6450
+Wire Notes Line
+	550  6450 1850 6450
+Wire Notes Line
+	550  7800 1850 7800
+Text Notes 1200 6900 0    50   ~ 0
+PS Filter\nAs Close as \npossible to MCU\n
+Wire Wire Line
+	1950 4200 2300 4200
+Text Label 2300 4200 0    50   ~ 0
+NTC
+Wire Wire Line
+	1950 4400 2300 4400
+Wire Wire Line
+	1950 4500 2300 4500
+Text Label 2300 4400 0    50   ~ 0
+BoilerMCU
+Text Label 2300 4500 0    50   ~ 0
+Pump_MCU
+Wire Wire Line
+	1950 4600 2300 4600
+Text Label 2300 4600 0    50   ~ 0
+Null_MCU
+Text Label 7900 5450 0    50   ~ 0
+FlowmeterMCU
+Wire Wire Line
+	1950 4300 2300 4300
+Text Label 2300 4300 0    50   ~ 0
+FlowmeterMCU
 $EndSCHEMATC
